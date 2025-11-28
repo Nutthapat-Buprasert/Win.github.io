@@ -25,8 +25,25 @@
       p{text-indent: 2em;}
       .zoom:hover{transform: scale(1.5); cursor:pointer;}
       
-      img:{animation:glowcolor 1.2s infinte}
-    </style>
+      img:{animation:glowcolor 1.2s infinte alternate;}
+      @keyframes glowcolors{0%{box-shadow: 0 0 20px hotpink;}
+                           25%{box-shadow: 0 0 20px skyblue;}
+                           50%{box-shadow: 0 0 20px gold;}
+                           75%{box-shadow: 0 0 20px darkviolet;}
+                           100%{box-shadow: 0 0 20px red;}
+                           }
+  .blink-bg{
+    animation: blinkbg 1s infinite alternate;
+    padding: 3px 6px;
+  } 
+  @keyframes blinkbg {
+    0% {background: hotpink;}
+    25% {background: yellow;}
+    50% {background: green;}
+    75% {background: white;}
+    100% {background: skyblue;}
+  }    
+  </style>
   </head>
   <body background="https://img.pikbest.com/photo/20240623/football-stadium-background-with-flashing-lights_10634083.jpg!w700wp">
     <header>
@@ -56,3 +73,10 @@
     💙ประเพณีชาวจตุรมิตร  <br><br>
       😍ผู้จัดทำ😎  <br><br>
     </div>
+    <section>
+     <center>
+       <h1><mark>ประวัติ</mark></h1>
+     </center>
+    </section>
+   </body>
+  </html>
